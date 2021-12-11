@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>표지</title>
+    <style>
+      span {
+        text-align: center;
+        font-size: 1.5em;
+        color: red;
+      }
+      body.main {
+        background: aliceblue;
+      }
+    </style>
+  </head>
+
+  <body class="main">
+    <hr />
+    <center>
+      <!-- 캔버스 생성 -->
+      <canvas
+        id="Canvas"
+        width="1000"
+        height="800"
+        onclick="location.href=('oneoutoftwo.html')"
+        onmouseover="startTimer(3000)"
+        onmouseout="cancelTimer()"
+      ></canvas>
+      <!-- 마우스 올려놓으면 링크로 3초후 링크로 이동-->
+      <hr />
+      <br />
+      <div>
+        <span
+          >코로나에 대해서 잘 알고 계신가요? 위 사진에 커서를 올려보세요</span
+        >
+      </div>
+
+      <script>
+        var canvas = document.getElementById("Canvas"); //canvas 객체
+        var context = canvas.getContext("2d");
+        var timer = null;
+
+        var img = new Image(); //new image()로 이미지 로딩
+        img.onload = function () {
+          context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        };
+        img.src = "images/코로나1.jpg";
+
+        function startTimer(time) {
+          //타이머 시작
+          timer = setTimeout("load('oneoutoftwo.html')", time); //시간이 종료되면 링크로 이동
+          document.getElementById("Canvas").title =
+            "사진에 커서를 올리면 곧 이동합니다";
+        }
+
+        function cancelTimer() {
+          if (timer != null) clearTimeout(timer); // 타이머 중단
+        }
+
+        function load(url) {
+          window.location = url; // 현재 윈도우에  url 사이트 로드
+        }
+      </script>
+    </center>
+  </body>
+</html>

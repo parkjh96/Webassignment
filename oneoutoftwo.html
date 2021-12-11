@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>코로나 대처행동</title>
+    <meta charset="utf-8" />
+    <style>
+      img {
+        width: 700px;
+        height: 700px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <h1>당신의 선택은..?</h1>
+      <p id="text"></p>
+      <img id="image1" onclick="change(0)" />
+      <img id="image2" onclick="change(1)" />
+      <br />
+      <br />
+      <a href="Result.html" onclick="return query()"> 스킵하기</a>
+      <!-- 스킵하기 클릭 시 다음 링크로 이동하는 스크립트-->
+
+      <script>
+        text = "어느 것이 올바른 행동일까요?"; //innerHTML을 이용한 텍스트
+        var images = []; //이미지 배열
+
+        var count = 0;
+        var count2 = 0;
+        var num = 0;
+        var link = "Result.html";
+
+        function show() {
+          for (i = 0; i < 16; i++) {
+            images[i] = i + 1 + ".jpg"; //총 16개의 이미지를 보여줌
+          }
+          showImg(num);
+        }
+        show();
+
+        function showImg(num) {
+          document.getElementById("image1").src = images[num]; //왼쪽에 나타낼 짝수 이미지
+          document.getElementById("image2").src = images[num + 1]; //오른쪽에 나타낼 홀수 이미지
+          count2++;
+        }
+
+        function change(n) {
+          //마우스 클릭 시
+          if (count2 < 9) {
+            count++;
+            num += 2; //이미지 2개씩
+            showImg(num);
+            if (count2 == 9) {
+              location.href = link; // 정해진 개수에 도달하면 바로 다음 웹페이지로 이동
+            }
+          }
+        }
+        function query() {
+          var ret = confirm("넘어가시겠습니까?");
+          return ret; // confirm()의 리턴 값은 true 또는 false
+        }
+
+        document.getElementById("text").innerHTML = text; //innerHTML을 이용한 텍스트
+      </script>
+    </center>
+  </body>
+</html>

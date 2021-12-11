@@ -1,0 +1,112 @@
+body,
+html {
+  height: 100vh;
+}
+/*grid area 직접 배정*/
+body {
+  margin: 0;
+  display: grid;
+  background-color: aliceblue;
+  grid-template-columns: 10% 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 15% auto auto auto 4%;
+  grid-template-areas:
+    ". header header header header"
+    "nav  section1 section2 section3 section4"
+    "nav main1 main1 main2 main2"
+    ".  main3 main3 main4 main4"
+    ".  main5 main5 main6 main6";
+}
+/*Grid 자식요소*/
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+section:nth-of-type(1) {
+  grid-area: section1;
+}
+section:nth-of-type(2) {
+  grid-area: section2;
+}
+section:nth-of-type(3) {
+  grid-area: section3;
+}
+
+section:nth-of-type(4) {
+  grid-area: section4;
+}
+main {
+  grid-area: main;
+}
+/*Grid 자식요소*/
+
+/* main영역의 자손 */
+main:nth-of-type(1) {
+  grid-area: main1;
+  background-color: rgb(154, 210, 243);
+  width: auto;
+}
+
+main:nth-of-type(2) {
+  grid-area: main2;
+
+  background-color: rgb(240, 172, 172);
+  width: auto;
+}
+main:nth-of-type(3) {
+  grid-area: main3;
+
+  background-color: rgb(172, 240, 203);
+}
+main:nth-of-type(4) {
+  grid-area: main4;
+
+  background-color: slateblue;
+}
+main:nth-of-type(5) {
+  grid-area: main5;
+
+  background-color: wheat;
+}
+main:nth-of-type(6) {
+  grid-area: main6;
+
+  background-color: rgb(153, 179, 255);
+}
+/* main영역의 자손 */
+
+.image {
+  display: flex;
+  align-items: stretch;
+  width: 500px;
+  height: 100%;
+}
+
+/* 링크 꾸미기 */
+.link1 {
+  text-decoration: wavy;
+  font-style: oblique;
+  font-size: 15pt;
+  font-weight: bold;
+}
+/* 링크 꾸미기 */
+
+.align {
+  text-align: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+#title {
+  display: inline;
+  font-size: 6em;
+}
+
+span:hover {
+  font-size: 200%;
+}

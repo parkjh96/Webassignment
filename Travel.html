@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>코로나 여행 정보</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="card.css" />
+    
+  </head>
+
+  <body>
+    <header>
+      <p id="title">
+        <!-- 텍스트 회전 -->
+        <stream id="stream">여행지 정보를 한눈에 찾아가세요 </stream>
+        <script src="index.js"></script>
+      </p>
+    </header>
+
+    <nav>
+      <ul id="list">
+        <li>
+          <a href="#part1"><span>여행 링크</span></a>
+        </li>
+        <br />
+        <!-- 글자 찾아가는 앵커 / 마우스 올릴시 200% 확대-->
+        <li>
+          <a href="#part2]"><span>코로나 맵 세계지도</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part3"><span>여행관련 지침</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part4"><span>여행 주의 영상</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part5"><span>상품 쇼핑</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part6"><span>여행 관련 해외 자료</span></a>
+        </li>
+        <br />
+      </ul>
+    </nav>
+
+    <section>
+      <a href="covid_Info.html">
+        <img src="Result/표지1.jpg" class="image" alt="코로나info" />
+      </a>
+    </section>
+    <section>
+      <a href="Travel.html">
+        <img src="Result/표지2.jpg" class="image" alt="여행"
+      /></a>
+    </section>
+    <section>
+      <a href="policy.html">
+        <img src="Result/표지3.jpg" class="image" alt="지원정책" />
+      </a>
+    </section>
+
+    <section>
+      <!-- 오디오 제어기 -->
+      <audio id="audio" src="EmbraceableYou.mp3"></audio>
+      <button id="play" onclick="control(event)">music play</button>
+      <button id="pause" onclick="control(event)">pause</button>
+      <button id="replay" onclick="control(event)">replay</button>
+    </section>
+
+    <main>
+      <h1 class="align" id="part1">여행 관련 링크</h1>
+
+      <h2>링크</h2>
+      <a
+        href="https://www.0404.go.kr/dev/main.mofa"
+        class="link1"
+        target="_blank"
+        >외교부 해외 안전여행</a
+      ><br />
+      <a
+        href="https://gisanddata.maps.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6%20"
+        class="link1"
+        target="_blank"
+        >코로나 실시간 상황판 전세계버전 존스홉킨스 </a
+      ><br />
+      <a
+        href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=13&ncvContSeq=&contSeq=&board_id=&gubun="
+        class="link1"
+        target="_blank"
+        >시도별 발생상황 </a
+      ><br />
+      <a
+        href="https://www.airport.kr/ap_cnt/ko/svc/covid19/checkin/checkin.do"
+        class="link1"
+        target="_blank"
+        >인천국제공항 출입안내 </a
+      ><br />
+      <a href="https://www.koreanair.com/kr/ko" class="link1" target="_blank">
+        대한항공</a
+      ><br />
+      <a
+        href="https://flyasiana.com/C/KR/KO/index"
+        class="link1"
+        target="_blank"
+        >아시아나 항공 </a
+      ><br />
+      <a
+        href="https://www.kayak.co.kr/news/kolonabaileoseu-gam-yeomjeungcovid-19-gwanlyeon-yeohaeng-annae/"
+        class="link1"
+        target="_blank"
+      >
+        항공사 모음</a
+      ><br />
+      <a
+        href="https://www.skyscanner.co.kr/news/tips/covid-19-coronavirus-travel-questions-answered#2021-trend"
+        class="link1"
+        target="_blank"
+        >코로나 관련 여행 문의 리스트</a
+      ><br />
+      <a
+        href="https://korean.cdc.gov/coronavirus/2019-ncov/travelers/map-and-travel-notices.html"
+        class="link1"
+        target="_blank"
+        >코로나 관련 목적지별 여행 권고사항 </a
+      ><br />
+      <a
+        href="https://know.tour.go.kr/introduce/intro19Re.do"
+        class="link1"
+        target="_blank"
+        >관광지식정보시스템 </a
+      ><br />
+      <a
+        href="https://www.mcst.go.kr/kor/s_culture/tour/tourList.jsp"
+        class="link1"
+        target="_blank"
+        >문화체육관광부 추천여행지</a
+      ><br />
+      <a
+        href="https://kr.trip.com/travel-restrictions-covid-19/"
+        class="link1"
+        target="_blank"
+      >
+        트립 닷컴 입국/출국 가능여부 바로확인</a
+      ><br />
+      <a
+        href="http://www.hotelskorea.or.kr/plaza/index_4.php"
+        class="link1"
+        target="_blank"
+        >국내 호텔찾기 </a
+      ><br />
+      <a href="https://www.kata.or.kr/v2/" class="link1" target="_blank">
+        한국여행업협회</a
+      ><br />
+      <a href="https://blog.naver.com/prologue/PrologueList.naver?blogId=k_customs&skinType=&skinId=&from=menu" class="link1" target="_blank">
+        관세청 블로그</a
+      ><br />
+
+      <h2>지역별 홈페이지</h2>
+      <a
+        href="https://korean.visitseoul.net/index"
+        class="link1"
+        target="_blank"
+        >Visit 서울 </a
+      ><br />
+      <a href="https://ggtour.or.kr/main.php" class="link1" target="_blank">
+        경기관광 포털</a
+      ><br />
+      <a
+        href="https://itour.incheon.go.kr/index.jsp"
+        class="link1"
+        target="_blank"
+      >
+        인천광역시 </a
+      ><br />
+      <a href="https://www.gangwon.to/gwtour" class="link1" target="_blank">
+        강원도 </a
+      ><br />
+      <a
+        href="https://www.sejong.go.kr/tour/sub02_02.do"
+        class="link1"
+        target="_blank"
+        >세종특별자치시 </a
+      ><br />
+      <a
+        href="https://tour.chungbuk.go.kr/www/index.do"
+        class="link1"
+        target="_blank"
+      >
+        충청북도 </a
+      ><br />
+      <a
+        href="https://tour.chungnam.go.kr/html/kr/"
+        class="link1"
+        target="_blank"
+        >충청남도 </a
+      ><br />
+      <a
+        href="https://www.daejeon.go.kr/tou/index.do"
+        class="link1"
+        target="_blank"
+        >대전광역시 </a
+      ><br />
+      <a href="https://tour.gb.go.kr/" class="link1" target="_blank">
+        경상북도 </a
+      ><br />
+      <a
+        href="https://www.daegu.go.kr/cts/index.do"
+        class="link1"
+        target="_blank"
+      >
+        대구광역시</a
+      ><br />
+      <a
+        href="https://tour.gyeongnam.go.kr/index.gyeong"
+        class="link1"
+        target="_blank"
+      >
+        경상남도 </a
+      ><br />
+      <a href="https://tour.jb.go.kr/index.do" class="link1" target="_blank">
+        전라북도 </a
+      ><br />
+      <a
+        href="https://tour.gwangju.go.kr/home/main.cs"
+        class="link1"
+        target="_blank"
+        >광주광역시 </a
+      ><br />
+      <a href="https://www.namdokorea.com/" class="link1" target="_blank">
+        전라남도</a
+      ><br />
+      <a
+        href="https://www.ulsan.go.kr/u/culture/main.ulsan"
+        class="link1"
+        target="_blank"
+      >
+        울산광역시 </a
+      ><br />
+      <a
+        href="https://www.visitbusan.net/kr/index.do"
+        class="link1"
+        target="_blank"
+      >
+        부산광역시 </a
+      ><br />
+      <a href="https://www.visitjeju.net/kr" class="link1" target="_blank"
+        >제주특별자치시</a
+      ><br />
+    </main>
+
+    <main class="align">
+      <h1 id="part2">코로나 맵 세계지도</h1>
+      <iframe
+        src="https://www.travelmakerkorea.com/"
+        width="800"
+        height="800"
+      ></iframe>
+    </main>
+
+    <main>
+      <h1 class="align" id="part3">여행관련 지침</h1>
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">주의사항</summary>
+        <ol>
+          <!-- 순서없는 태그 -->
+          <li>백신 접종을 완료할 때까지 <mark>여행을 미루세요.</mark></li>
+          <li>
+            여행 전에 목적지의 COVID-19 상황을 확인하세요. 주, 지방, 자치구역
+            정부가 여행을 제한할 수도 있습니다.
+          </li>
+          <li>
+            대중교통 실내(비행기 포함)와 미국 교통 허브(공항 포함) 실내에서는
+            마스크를 착용하여 <mark>코와 입을 가려야 합니다.</mark>
+          </li>
+          <li>
+            COVID-19에 노출되었거나, 아프거나, COVID-19 <mark>양성 반응</mark>을 보이면
+            여행을 하지 말아야 합니다.
+          </li>
+          <li>
+            백신 접종을 완료하지 않았는데 여행해야 하는 경우는 <mark>여행 전후에 검사를 받으세요.</mark>
+          </li>
+        </ol>
+      </details>
+
+      <br />
+      <details class="alignleft">
+        <summary style="font-size: 2em">여행 전</summary>
+        <p style="font-weight: bold"></p>
+        <ul>
+          <li>미리 계획하기:</li>
+          <ol>
+            <li>목적지의 현재 COVID-19 상황을 확인하세요.</li>
+            <li>
+              마스크 착용, 백신 접종 증명, 검사 요건, 예방격리 요건을 포함하여
+              모든 주, 지역, 자치구역 <mark>여행 제한사항을 확인</mark>하고 준수해야 합니다.
+            </li>
+            <li>
+              비행기로 여행하는 경우 항공사에서 검사, 백신 접종 증명서, 기타
+              <mark>서류를 요구하는지 확인하세요.</mark>
+            </li>
+            <li>
+              여행 중에 제한사항과 정책이 변경될 수 있으므로 여행 중에 유연하게
+              대응하세요.
+            </li>
+          </ol>
+          <li>여행하지 말아야하는 경우:</li>
+          <ol>
+            <li>
+              백신 접종 완료 또는 지난 90일 안에 COVID-19에서 회복된 경우가
+              아닌데, COVID-19에 노출되었을 때
+            </li>
+            <li>아플 때</li>
+            <li>
+              COVID-19 양성 판정을 받았고 격리가 종료되지 않았을 때<mark>(백신 접종을
+                완료했더라도).</mark>
+            </li>
+            <li>
+              COVID-19 검사 결과를 기다리고 있을 때. 목적지에 있는 동안 검사에서
+              양성 반응이 나오면, 격리를 끝내도 안전해질 때까지 격리하고 귀국을
+              연기해야 ​​합니다. 여행 동반자는 자가예방격리가 필요할 수
+              있습니다.
+            </li>
+          </ol>
+        </ul>
+      </details>
+      <br />
+      <details class="alignleft">
+        <summary style="font-size: 2em">여행 중</summary>
+        <p style="font-weight: bold"></p>
+        <ul>
+          <li>마스크</li>
+          <ul>
+            <li>
+              비행기, 버스, 기차 및 기타 미국으로 들어오거나 미국 내에서
+              이동하거나 미국에서 나가는 모든 유형의 대중교통수단과 공항, 역 등
+              미국 교통 허브의 실내에서는 코와 입을 가리는 마스크 착용이
+              필수입니다. 운송수단 실외 구역(예: 페리의 개방된 데크 구역 또는
+              버스의 덮개가 없는 상단 데크)에서는 마스크를 벗을 수 있습니다.
+            </li>
+          </ul>
+          <li>자신과 다른 사람을 보호하기</li>
+          <ol>
+            <li>
+              마스크 착용, 다른 사람으로부터 <mark>6피트(2미터)</mark> 거리두기 등을 포함하여
+              목적지의 주 및 지방 보건 권장사항 및 요건을 지키세요.
+            </li>
+            <li>
+              2세 이상인 여행자는 다음과 같은 경우 실내 공공장소에서 마스크를
+              착용해야 합니다.
+            </li>
+            <ol type="A">
+              <li>백신 접종을 완료하지 않음</li>
+              <li>
+                백신 접종을 완료했지만 COVID-19 감염 레벨이 상당함 또는 높음인
+                지역에 있을 때
+              </li>
+              <li>백신 접종을 완료했으나 면역체계가 약한 경우</li>
+            </ol>
+            <li>
+              백신 접종이 완료되지 않았고 2세 이상인 경우는 실내 공공장소에서
+              마스크를 착용해야 합니다.
+            </li>
+            <li>일반적으로 야외 환경에서는 마스크를 착용할 필요가 없습니다.</li>
+            <li>
+              <em>손을 자주 씻거나 손 소독제(알코올 함량 60% 이상)</em>를 사용하세요.
+            </li>
+          </ol>
+        </ul>
+      </details>
+
+      <br />
+      <details class="alignleft">
+        <summary style="font-size: 2em">여행 후</summary>
+        <ul>
+          <li>모든 여행자</li>
+          <li>
+            진단을 위한 검사 기준
+            <ol>
+              <!-- ul 태그 중첩-->
+              <li>
+                COVID-19 증상에 대한 자가 모니터링. 증상이 나타나면 격리하고
+                검사 받으세요.
+              </li>
+              <li>
+                주 및 지방 행정부/보건부의 여행 후 권고사항 또는 요구사항을 모두
+                준수하세요.
+              </li>
+            </ol>
+          </li>
+
+          <li>백신 접종 미완료인 경우</li>
+          <ol>
+            <li>
+              여행에서 돌아오면 3-5일 후에 바이러스 검사법으로 검사받으세요.
+              가까운 COVID-19 검사소를 확인하세요.
+            </li>
+            <li>
+              여행 후 3-5일에 받은 검사에서 음성이 나오더라도 외출하지 말고 집에
+              머물면서, 7일 동안 자가 예방격리하세요.
+            </li>
+            <li>
+              검사를 받지 않는 경우라면, 여행 후 10일 동안 집에서
+              자가격리하세요.
+            </li>
+          </ol>
+        </ul>
+      </details>
+      <br>
+      <details class="alignleft">
+      <summary style="font-size: 2em">최근에 COVID-19에서 회복된 경우</summary>
+        <ul>
+          <li>지난 <mark>90일</mark> 안에 COVID-19에서 회복된 사람은 검사나 <mark>자가격리가 필요하지 않습니다.</mark> 그러나 그 외 모든 여행 권장사항을 지켜야 합니다. 여행 후 COVID-19 증상이 생기면 격리하고, 검사 여부에 대해 의료기관과 상담하세요.</li>
+            
+      </details>
+
+
+    </main>
+    <main class="align">
+      <h1 id="part4">여행 주의 영상</h1>
+      <iframe
+        width="800"
+        height="650"
+        src="Travel/안전한여행지.mp4"
+        title="video player"
+        allow="accelerometer; autoplay controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+      <br />
+      출처: 대한민국 정책브리핑
+      <a
+        href="https://www.korea.kr/news/mediaNewsView.do?newsId=148891143"
+        target="_blank"
+      >
+        https://www.korea.kr/news/mediaNewsView.do?newsId=148891143
+      </a>
+    </main>
+
+    <main>
+      <h1 class="align" id="part5">코로나 관련 상품</h1>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/마스크.jpg" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 웰킵스 제트폴드 황사방역마스크 KF94 25개입 </div>
+          <div class="Card_price"> 19,900원</div>
+          <div>
+          <a href="http://www.welkeepsmall.com/">살펴보기 (사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/아에르.jpg" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 아에르 KF94 어드밴스드 V 마스크 10개입 </div>
+          <div class="Card_price"> 11,900원</div>
+          <div>
+          <a href="">살펴보기(사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/아이깨끗해.jpg" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 아이깨끗해 용기 250ml 1개+리필 200ml 4개 </div>
+          <div class="Card_price"> 10,900원</div>
+          <div>
+          <a href="https://smartstore.naver.com/iholiczone">살펴보기(사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/3m손세정제.JPG" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 3M 새니타이저 겔타입 핸드 휴대용 60ml 500ml 손세정제 </div>
+          <div class="Card_price"> 1,780원</div>
+          <div>
+          <a href="https://smartstore.naver.com/3measymall/products/4662327896?NaPm=ct%3Dkwz69ki0%7Cci%3De12a00e6a4487f14ada8961d4f0b1976e75d0e8e%7Ctr%3Dsls%7Csn%3D228875%7Chk%3Db09dcc942d987bdb02af7f86c50d916302b4ea71">살펴보기(사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/래피젠.JPG" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 식약처 공식인증 래피젠 코로나 자가진단 키트 1개</div>
+          <div class="Card_price"> 3,280원</div>
+          <div>
+          <a href="">살펴보기(사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="Card_img" src="Travel/SD바이오센서.JPG" />
+        </div>
+        <div class="Card_contents">
+          <div class="Card_name"> 코로나 자가진단 키트 SD바이오센서 홈 테스트 1개입 </div>
+          <div class="Card_price"> 3,230원</div>
+          <div>
+          <a href="">살펴보기(사이트 링크)</a>
+          </div>
+        </div>
+      </div>
+
+   
+
+      
+
+      
+
+     
+      
+    </main>
+    <main>
+      <h1 class="align" id="part6">여행 관련 해외 자료</h1>
+      <h2>국가별 코로나바이러스 정보 주소</h2>
+      <a
+        href="https://www.rijksoverheid.nl/onderwerpen/coronavirus-covid-19"
+        class="link1"
+        target="_blank"
+        >네덜란드 보건복지체육부(Ministry of Health, Welfare and Sport)
+      </a>
+      <br />
+      <a href="https://helsenorge.no/koronavirus" class="link1" target="_blank"
+        >노르웨이 보건부(Health Norway)
+      </a>
+      <br />
+      <a href="https://www.mohw.go.kr/eng/" class="link1" target="_blank"
+        >대한민국 보건복지부 </a
+      ><br />
+      <a
+        href="https://www.infektionsschutz.de/coronavirus-sars-cov-2.html"
+        class="link1"
+        target="_blank"
+        >독일 연방 보건 교육 센터(Federal Center for Health Education)
+      </a>
+      <br />
+      <a href="http://www.moh.gov.my/" class="link1" target="_blank">
+        말레이시아 보건부(Health Ministry)</a
+      >
+      <br />
+      <a href="https://www.cdc.gov/" class="link1" target="_blank">
+        미국 질병통제예방센터(Center for Disease Control)</a
+      >
+      <br />
+      <a href="https://www.moh.gov.vn/vi_VN" class="link1" target="_blank">
+        베트남 보건부(Ministry of Health)</a
+      >
+      <br />
+      <a
+        href="https://www.info-coronavirus.be/en/"
+        class="link1"
+        target="_blank"
+        >벨기에 연방 보건식품안전환경부(Federal Public Service (FPS) Health,
+        Food Chain Safety and Environment)
+      </a>
+      <br />
+      <a href="https://coronavirus.saude.gov.br/" class="link1" target="_blank"
+        >브라질 보건부(Ministério da Saúde)
+      </a>
+      <br />
+      <a
+        href="https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/"
+        class="link1"
+        target="_blank"
+      >
+        스웨덴 공중보건국(Public Health Agency of Sweden)</a
+      >
+      <br />
+      <a
+        href="https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html"
+        class="link1"
+        target="_blank"
+        >스위스 연방 공중보건청(Federal Office of Public Health FOPH)
+      </a>
+      <br />
+      <a
+        href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm"
+        class="link1"
+        target="_blank"
+      >
+        스페인 보건부(Ministry of Health)</a
+      >
+      <br />
+      <a href="https://www.moh.gov.sg/" class="link1" target="_blank">
+        싱가포르 보건부(Ministry of Health)</a
+      ><br />
+      <a
+        href="https://www.gov.ie/en/campaigns/c36c85-covid-19-coronavirus/?referrer=/health-covid-19"
+        class="link1"
+        target="_blank"
+      >
+        아일랜드 보건부(Department of Health)</a
+      >
+      <br />
+      <a href="https://www.nhs.uk/" class="link1" target="_blank"
+        >영국 국민건강서비스(NHS)
+      </a>
+      <br />
+      <a
+        href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert"
+        class="link1"
+        target="_blank"
+        >오스트레일리아 연방 정부 보건부(Australia Government Department of
+        Health)
+      </a>
+      <br />
+      <a
+        href="https://govextra.gov.il/ministry-of-health/corona/corona-virus-en/"
+        class="link1"
+        target="_blank"
+        >이스라엘 보건부(Ministry of Health)
+      </a>
+      <br />
+      <a
+        href="http://www.salute.gov.it/portale/home.html"
+        class="link1"
+        target="_blank"
+        >이탈리아 보건부(Ministry for Health)
+      </a>
+      <br />
+      <a href="https://www.mohfw.gov.in/" class="link1" target="_blank">
+        인도 보건가족복지부(Ministry of Health and Family Welfare, Govt. of
+        India)</a
+      >
+      <br />
+      <a
+        href="https://infeksiemerging.kemkes.go.id/"
+        class="link1"
+        target="_blank"
+        >인도네시아 보건부(Ministry of Health)
+      </a>
+      <br />
+      <a href="https://www.cas.go.jp/" class="link1" target="_blank"
+        >일본 내각관방(Cabinet Secretariat) </a
+      ><br />
+      <a
+        href="https://www.canada.ca/en/health-canada.html"
+        class="link1"
+        target="_blank"
+      >
+        캐나다 공중보건국(Public Health Agency of Canada)</a
+      ><br />
+      <a href="https://www.cdc.gov.tw/" class="link1" target="_blank">
+        타이완 타이완 질병통제센터(CDC)</a
+      >
+      <br />
+      <a
+        href="https://ddc.moph.go.th/viralpneumonia/index.php"
+        class="link1"
+        target="_blank"
+        >태국 보건부(Thailand Ministry of Public Health) </a
+      ><br />
+      <a
+        href="https://solidarites-sante.gouv.fr/"
+        class="link1"
+        target="_blank"
+      >
+        프랑스 Gouvernement.fr</a
+      ><br />
+      <a
+        href="https://www.chp.gov.hk/tc/index.html"
+        class="link1"
+        target="_blank"
+      >
+        홍콩 건강 보호 센터(Center for Health Protection)</a
+      >
+      <br />
+    </main>
+  </body>
+</html>
