@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>코로나 금융 정보</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+
+  <body>
+    <header>
+      <p id="title">
+        <!-- 텍스트 회전 -->
+        <stream id="stream">지원정책을 한눈에 알아가세요 </stream>
+        <script src="index.js"></script>
+      </p>
+    </header>
+
+    <nav>
+      <ul id="list">
+        <li>
+          <a href="#part1"><span>정책 링크</span></a>
+        </li>
+        <br />
+        <!-- 글자 찾아가는 앵커 / 마우스 올릴시 200% 확대-->
+        <li>
+          <a href="#part2"><span>지원정책 맵</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part3"><span> 지원정책 설명</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part4"><span>정책 설명 영상</span></a>
+        </li>
+        <br />
+        <li>
+          <a href="#part5"><span> 해외링크 </span></a>
+        </li>
+        <br />
+      </ul>
+    </nav>
+
+    <section>
+      <a href="covid_Info.html">
+        <img src="Result/표지1.jpg" class="image" alt="코로나info" />
+      </a>
+    </section>
+    <section>
+      <a href="Travel.html">
+        <img src="Result/표지2.jpg" class="image" alt="여행"
+      /></a>
+    </section>
+    <section>
+      <a href="policy.html">
+        <img src="Result/표지3.jpg" class="image" alt="지원정책" />
+      </a>
+    </section>
+
+    <section>
+      <!-- 오디오 제어기 -->
+      <audio id="audio" src="EmbraceableYou.mp3"></audio>
+      <button id="play" onclick="control(event)">music play</button>
+      <button id="pause" onclick="control(event)">pause</button>
+      <button id="replay" onclick="control(event)">replay</button>
+    </section>
+
+    <main>
+      <h1 class="align" id="part1">정책 관련 링크</h1>
+
+      <h2>링크</h2>
+      <a
+        href="https://www.korea.kr/special/policyCurationView.do?newsId=148872965#L2-1"
+        class="link1"
+        target="_blank"
+      >
+        정책브리핑 재난지원금 </a
+      ><br />
+      <a href="https://eiec.kdi.re.kr/covid19.do" class="link1" target="_blank">
+        경제정보센터 </a
+      ><br />
+      <a
+        href="http://ncov.mohw.go.kr/supportPolicyBoardList.do?brdId=5&brdGubun=51"
+        class="link1"
+        target="_blank"
+      >
+        질병관리청 피해지원정책 </a
+      ><br />
+      <a
+        href="https://www.korea.kr/etc/covid19List.do"
+        class="link1"
+        target="_blank"
+      >
+        코로나 지원정책 한눈에 </a
+      ><br />
+      <a href="https://www.moef.go.kr/" class="link1" target="_blank">
+        기획재정부 </a
+      ><br />
+      <a
+        href="https://www.mcst.go.kr/kor/s_policy/covid19/covid19.jsp"
+        class="link1"
+        target="_blank"
+      >
+        문화체육관광부 지원대책 </a
+      ><br />
+      <a
+        href="https://www.fss.or.kr/fss/kr/bbs/list.jsp?sort=DESC&orderby=TITLE&url=/fss/kr/1207470626807&bbsid=1207470626807&page=6"
+        class="link1"
+        target="_blank"
+      >
+        금융감독원 지원방안 </a
+      ><br />
+      <a
+        href="https://www.youthcenter.go.kr/youngPlcyUnif/youngPlcyUnifList.do?srchPlcyTp=004006&plcyTpOpenTy=list_004006"
+        class="link1"
+        target="_blank"
+      >
+        온라인청년센터 코로나정책 </a
+      ><br />
+      <a
+        href="http://www.moel.go.kr/policy/corona19/main.do"
+        class="link1"
+        target="_blank"
+      >
+        고용노동부 코로나대응 </a
+      ><br />
+      <a
+        href="http://www.kcif.or.kr/front/board/hotIssueList.do?hotId=585"
+        class="link1"
+        target="_blank"
+      >
+        국제금융센터 </a
+      ><br />
+      <a
+        href="https://www.bokjiro.go.kr/ssis-teu/index.do"
+        class="link1"
+        target="_blank"
+      >
+        복지로 </a
+      ><br />
+
+      <h2>지역별 지원정책</h2>
+
+      <a
+        href="https://youth.seoul.go.kr/site/main/content/CORONA19"
+        class="link1"
+        target="_blank"
+      >
+        서울청년포털 </a
+      ><br />
+      <a
+        href="https://www.seoul.go.kr/coronaV/coronaStatus.do?menu_code=18"
+        class="link1"
+        target="_blank"
+      >
+        I Seoul U </a
+      ><br />
+      <a
+        href="https://www.gg.go.kr/contents/contents.do?ciIdx=1144&menuId=2896"
+        class="link1"
+        target="_blank"
+      >
+        경기도 지원정책 </a
+      ><br />
+      <a
+        href="https://www.incheon.go.kr/covid19/CVD0030102"
+        class="link1"
+        target="_blank"
+      >
+        인천광역시 지원정책 </a
+      ><br />
+      <a
+        href="https://www.provin.gangwon.kr/covid-19.html"
+        class="link1"
+        target="_blank"
+      >
+        강원도청 </a
+      ><br />
+      <a
+        href="https://www1.chungbuk.go.kr/covid-19/policy.html"
+        class="link1"
+        target="_blank"
+      >
+        충청북도 지원 시책 </a
+      ><br />
+      <a
+        href="http://www.chungnam.go.kr/corona/post_corona23.html"
+        class="link1"
+        target="_blank"
+      >
+        충청남도 경제지원 </a
+      ><br />
+      <a
+        href="https://daejeon.go.kr/corona19/ecoRecoveryBoardList.do"
+        class="link1"
+        target="_blank"
+      >
+        대전광역시 경제회복 지원 </a
+      ><br />
+      <a
+        href="https://www.gb.go.kr/corona/corona_measure.jsp"
+        class="link1"
+        target="_blank"
+      >
+        경상북도 지원시책 </a
+      ><br />
+      <a
+        href="http://covid19.daegu.go.kr/00936641.html"
+        class="link1"
+        target="_blank"
+      >
+        대구광역시 경제지원 </a
+      ><br />
+      <a
+        href="http://xn--19-q81ii1knc140d892b.kr/EgovPageLink.do?menuNo=&link=sub%2Fcorona13"
+        class="link1"
+        target="_blank"
+      >
+        경상남도 지원대책 </a
+      ><br />
+      <a
+        href="https://www.jeonbuk.go.kr/index.jeonbuk?menuCd=DOM_000000110011000000"
+        class="link1"
+        target="_blank"
+      >
+        전라북도 </a
+      ><br />
+      <a
+        href="https://www.gwangju.go.kr/c19/contentsView.do?pageId=corona49"
+        class="link1"
+        target="_blank"
+      >
+        광주광역시 민생안정대책 </a
+      ><br />
+      <a href="http://www.jcdm.or.kr/" class="link1" target="_blank">
+        전라남도 관리지원단 </a
+      ><br />
+      <a
+        href="https://www.ulsan.go.kr/u/health/bbs/list.ulsan?bbsId=BBS_0000000000000049&mId=001002001000000000"
+        class="link1"
+        target="_blank"
+      >
+        울산광역시 심리지원 </a
+      ><br />
+      <a
+        href="https://www.busan.go.kr/nhot/1428999"
+        class="link1"
+        target="_blank"
+      >
+        부산광역시 지원대책 </a
+      ><br />
+    </main>
+
+    <main class="align">
+      <h1 id="part2">지원정책 맵</h1>
+      <iframe
+        src="https://www.korea.kr/etc/covid19List.do"
+        width="800"
+        height="800"
+      ></iframe>
+    </main>
+
+    <main>
+      <h1 class="align" id="part3">지원정책 설명</h1>
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">재난지원금</summary>
+
+        <ul>
+          <li>
+            경제활동과 소비심리가 크게 위축되고 민생·경제 전반의 어려움이
+            확대되어 소상공인·자영업자·일반 국민의 광범위한 계층에 피해가 발생한
+            상황에서, 주로 사회적 취약계층을 대상으로 한 기존 복지제도로는
+            지원의 사각지대가 발생했다. 이같은 상황에서 민생경제의 숨통을 틔우기
+            위해 결정한 긴급재난지원금은 유례없는 위기에 대응하여 국민 생활의
+            안정과 위축된 경제 회복을 위해 정부가 제공하는 국민 안전망이다.
+          </li>
+          <li>
+            <a
+              href="https://www.korea.kr/special/policyFocusList.do?pkgId=49500742&pkgSubId=25000088"
+              class="link1"
+              target="_blank"
+              >정책뉴스 목록</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">소상공인 지원금</summary>
+        <ul>
+          <li>
+            방역 조치로 피해가 누적된 소상공인·소기업에 대해 방역수준, 방역조치
+            기간, 규모, 업종 등 업체별 피해 정도를 최대한 반영해 ‘소상공인
+            희망회복자금’을 지원 한다. (8월~, 8월 첫주 공고 예정) 또한
+            「소상공인법」 개정안 공포(‘21.7.7.) 이후 집합금지 및 영업시간 제한
+            조치에 따라 경영상 심각한 손실이 발생한 소상공인에 피해규모별 맞춤형
+            손실보상금을 지급한다. (10월~)
+          </li>
+          <li>
+            <a
+              href="https://www.korea.kr/news/policyNewsView.do?newsId=148890731"
+              class="link1"
+              target="_blank"
+              >관련 정보/기사</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">긴급고용안정지원금</summary>
+        <ul>
+          <li>
+            기존 긴급 고용안정지원금(1·2·3차)을 지원받은 특고·프리랜서에게 추가
+            50만원을 지원하고, 기존에 긴급 고용안정지원금을 지원받지 않은
+            특고·프리랜서( ’20년 10~11월 중 고용보험 미가입자)에게는 신규신청을
+            받아 심사를 거쳐 최대 100만원을 지원한다. 또한 매출 감소
+            법인택시기사와 전세버스기사(신규)에 70만원, 방문돌봄서비스 종사자에
+            50만원을 지원한다. (2021년 1차 추경, 3.25)
+          </li>
+          <li>
+            <a href="https://covid19.ei.go.kr/" class="link1" target="_blank"
+              >관련 정보/기사</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">기타 지원금/수당/쿠폰</summary>
+        <ul>
+          <li>
+            코로나19로 인해 자가격리나 입원치료를 받은 개인에게 생활비를
+            지급하고, 무급휴직 근로자, 특고·프리랜서, 건설일용근로자, 피해점포
+            소상공인 등 코로나19로 직접적인 피해를 본 취약계층 개인들을 위한
+            긴급복지지원금은 물론, 개학연기나 가족 돌봄 등 간접적 피해지원을
+            위한 아동돌봄쿠폰, 가족돌봄 휴가비 지원까지 다양한 지원금과 쿠폰
+            등을 지급하고 있다. 또한 소비 활성화 및 피해업계 지원을 위해
+            ‘소비쿠폰’ 도 지급한다.
+          </li>
+          <li>
+            <a
+              href="https://www.korea.kr/special/policyFocusView.do?newsId=148870998&pageIndex=13&pkgId=49500742&pkgSubId=25000088"
+              class="link1"
+              target="_blank"
+              >관련 정보/기사</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">일자리/고용안정/취업지원</summary>
+        <ul>
+          <li>
+            특별고용지원업종 지정 확대 - 여행업, 관광숙박업, 관광운송업, 공연업,
+            항공지상조업, 면세점업, 전시·국제회의업, 공항버스·전세버스, 창작 및
+            예술관련 서비스업 등 코로나19피해 심각업종 9월까지 고용유지지원금과
+            직업훈련 등 정부 지원 대폭강화
+          </li>
+          <li>
+            비대면·디지털중심 일자리 사업 추진 : 청년 등을 대상으로 공간·도로
+            데이터 구축, 실직자·휴폐업 자영업자 등에 옥외일자리 분야에 30만명
+            확대. 청년 고용 기업에 인건비 보조금 지원, 방역·수해복구 지원 등
+            재난 극복을 위한 긴급일자리 2.4만개 제공
+          </li>
+          <li>
+            고용보험 대상 확대 (긴급고용안정 지원금(2-3.참조))
+            특고·프리랜서영세자영업자 등에 3개월간 월 50만원 구직급여 확대,
+            청년구직활동지원금 확대, 취업성공패키지 확대, 직업훈련 생계비 대부,
+            국민내일배움카드 개편-자부담 완화, 실업자 채용 중소·중견기업에
+            특별고용촉진장려금 지원, 청년특별구직지원금(만 18~34세 미취업 구직
+            희망자 20만명 대상 특별 구직지원금 50만원 지급), 근로능력이 있는
+            저소득층 5천명에 일자리 제공 및 취업 연계
+          </li>
+          <li>
+            <a
+              href="http://www.moel.go.kr/policy/corona19/main.do"
+              class="link1"
+              target="_blank"
+              >관련 정보/기사</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <details class="alignleft">
+        <!-- detail/summary 태그 & 왼쪽 정렬 -->
+        <summary style="font-size: 2em">금융지원</summary>
+        <ul>
+          <li>
+            정부는 1차 비상경제회의에서 50조원 규모의 중소기업 및 소상공인 대상
+            민생금융패키지를 발표한데 이어 2차 회의에서 다시 기업과 금융시장에
+            100조원 규모의 기업구호긴급자금을 투입한다고 발표, “코로나 충격으로
+            인한 기업도산을 반드시 막겠다”는 각오를 보였다. 5차
+            비상경제회의에서는 기간산업기금 40조원을 운용할 계획을 밝혔다. 즉
+            이번 정부의 금융지원은 중소기업·소상공인 등 자영업자들은 물론
+            주력산업의 중견·대기업·창업벤처까지 대상을 총망라해, 경쟁력 있는
+            기업이 일시적인 유동성 부족 때문에 위기에 빠지지 않도록 특단의
+            선제적 조치를 내렸다고 할 수 있다.
+          </li>
+
+          <li>
+            <a
+              href="http://www.moef.go.kr/sns/2020/emgncEcnmyMtg.do?category1=detail#01"
+              class="link1"
+              target="_blank"
+              >관련 정보/기사</a
+            >
+          </li>
+        </ul>
+      </details>
+      <br />
+
+      <br />
+    </main>
+    <main class="align">
+      <h1 id="part4">정책 설명 영상</h1>
+      <iframe
+        width="800"
+        height="650"
+        src="http://www.ktv.go.kr/content/view?content_id=634586"
+        title="YouTube video player"
+        allow="accelerometer; autoplay controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      ></iframe>
+      <br />
+      출처: KTV 국민방송
+      <a
+        href="https://www.ktv.go.kr/content/view?content_id=634586"
+        target="_blank"
+      >
+        https://www.ktv.go.kr/content/view?content_id=634586
+      </a>
+    </main>
+
+    <main></main>
+
+    <main>
+      <h1 class="align" id="part5">해외 자료</h1>
+      <h2>국가별 코로나바이러스 정보 주소</h2>
+      <a
+        href="https://www.pwc.com/kr/ko/publications/research-paper/covid-19/country-covid-19-policy.html#related-links"
+        class="link1"
+        target="_blank"
+        >주요국가 대응정책
+      </a>
+      <br />
+
+      <a
+        href="https://www.gaok.or.kr/gaok/bbs/B0000008/view.do?nttId=13165&menuNo=200088"
+        class="link1"
+        target="_blank"
+        >미국 피해 구제 정책
+      </a>
+      <br />
+
+      <a
+        href="https://kiri.or.kr/report/downloadFile.do?docId=6273"
+        class="link1"
+        target="_blank"
+        >각국의 대응 p.53
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=180938"
+        class="link1"
+        target="_blank"
+        >중국</a
+      >
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=191191&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+      >
+        태국 코로나19 대응
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=186615&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+      >
+        오스트리아 대응
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=181933&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+        >폴란드 대응
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=181696&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+      >
+        멕시코 대응조치
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=181005&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+      >
+        이집트 전망
+      </a>
+      <br />
+
+      <a
+        href="https://news.kotra.or.kr/user/globalBbs/kotranews/3/globalBbsDataView.do?setIdx=242&dataIdx=180827&pageViewType=&column=title&search=%EC%BD%94%EB%A1%9C%EB%82%9819%20%EB%8C%80%EC%9D%91&searchAreaCd=&searchNationCd=&searchTradeCd=&searchStartDate=&searchEndDate=&searchCategoryIdxs=&searchIndustryCateIdx=&searchItemCode=&searchItemName=&page=1&row=10"
+        class="link1"
+        target="_blank"
+      >
+        남아공 정부 코로나19 대응
+      </a>
+      <br />
+
+      <br />
+    </main>
+  </body>
+</html>
